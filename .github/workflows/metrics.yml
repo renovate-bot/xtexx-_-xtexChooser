@@ -1,0 +1,47 @@
+name: Metrics
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+  push:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: lowlighter/metrics@main
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          output_action: gist
+          committer_gist: f5aaad2a87537508c3e27ea6d47c6443
+
+          user: xtexChooser
+          template: classic
+          base: header, activity, community, repositories, metadata
+          base_indepth: yes
+          config_octicon: yes
+          config_timezone: Asia/Shanghai
+          plugin_discussions: yes
+          plugin_followup: yes
+          plugin_followup_sections: user
+          plugin_followup_indepth: yes
+          plugin_gists: yes
+          plugin_isocalendar: yes
+          plugin_languages: yes
+          plugin_languages_indepth: yes
+          plugin_licenses: yes
+          plugin_licenses_setup: npm ci
+          plugin_licenses_ratio: yes
+          plugin_lines: yes
+          plugin_lines_history_limit: 2
+          plugin_lines_repositories_limit: 4
+          plugin_lines_sections: repository
+          plugin_notable: yes
+          plugin_notable_from: all
+          plugin_notable_types: commit
+          plugin_notable_indepth: yes
+          plugin_rss: yes
+          plugin_rss_limit: 2
+          plugin_rss_source: https://xtexx.ml/blog/atom.xml
