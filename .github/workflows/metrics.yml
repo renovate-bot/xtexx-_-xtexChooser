@@ -40,4 +40,4 @@ jobs:
           plugin_notable_types: commit
           plugin_rss: yes
           plugin_rss_limit: 2
-          plugin_rss_source: https://xtexx.ml/blog/atom.xml
+          plugin_rss_source: https://blog.xtexx.ml/atom.xml
