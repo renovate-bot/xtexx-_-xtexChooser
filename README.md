@@ -1,6 +1,6 @@
-# uid=xtex,ou=People
+# uid=xtex,ou=Entities
 
-[MORE](https://xtexx.eu.org/)
+Check-out [xtexx.eu.org](https://xtexx.eu.org/).
 
 **See my projects at [Codeberg](https://codeberg.org/xtex)!**
 
