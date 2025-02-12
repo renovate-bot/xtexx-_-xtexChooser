@@ -7,3 +7,5 @@ See also: [xtexx.eu.org](https://xtexx.eu.org/), and my projects at [Codeberg](h
 Hi, I'm here. I am a contributor to AOSC OS and Linux kernel, etc. Also I contributed to many OSS projects. Appear around the Internet randomly.
 
 碳基生物，AOSC OS与Linux kernel贡献者，随机刷新，成分复杂。
+
+开学，勿念。XD
